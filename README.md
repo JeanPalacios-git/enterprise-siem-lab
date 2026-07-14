@@ -28,26 +28,26 @@ mapping to simulate a realistic SOC environment.
 
 ### Infrastructure
 
-  ------------------------------------------------------------------------
-  Host           Operating System                           Role
-  -------------- ------------------------------------------ --------------
-  JeanPc         Windows 11 Pro                             Management
-                                                            Host + Wazuh
-                                                            Agent
+  ----------------------------------------------------------------------
+  Host           Operating System                         Role
+  -------------- ---------------------------------------- --------------
+  JeanPc         Windows 11 Pro                           Management
+                                                          Host + Wazuh
+                                                          Agent
 
-  DC01           Windows Server 2022                        Active
-                                                            Directory
-                                                            Domain
-                                                            Controller
+  DC01           Windows Server 2022                      Active
+                                                          Directory
+                                                          Domain
+                                                          Controller
 
-  linux-01       Ubuntu Server 24.04 LTS                    Linux
-                                                            Endpoint +
-                                                            auditd
+  linux-01       Ubuntu Server 24.04 LTS                  Linux
+                                                          Endpoint +
+                                                          auditd
 
-  wazuh-server   Ubuntu Server 24.04 LTS                    Wazuh Manager,
-                                                            Indexer and
-                                                            Dashboard
-  ------------------------------------------------------------------------
+  wazuh-server   Ubuntu Server 24.04 LTS                  Wazuh Manager,
+                                                          Indexer and
+                                                          Dashboard
+  ----------------------------------------------------------------------
 
 ## Technologies
 
@@ -81,9 +81,13 @@ mapping to simulate a realistic SOC environment.
 -   User Management
 -   File Integrity Monitoring
 
-## MITRE ATT&CK Mapping
+## MITRE ATT&CK Context
 
-  Event               Technique
+The following telemetry sources can support investigations and detection
+logic associated with MITRE ATT&CK techniques. Individual events do not,
+by themselves, prove that the mapped technique occurred.
+
+  Telemetry           Investigation Context
   ------------------- --------------------------------------------
   4624                T1078 -- Valid Accounts
   4625                T1110 -- Brute Force
@@ -146,9 +150,9 @@ through the Wazuh Dashboard:
 -   Sysmon Configuration
 -   auditd Configuration
 -   Endpoint Telemetry Collection
--   MITRE ATT&CK Mapping
+-   MITRE ATT&CK Contextualization
 -   Log Analysis
--   Security Event Correlation
+-   Cross-platform Event Visibility
 -   Incident Investigation
 -   Technical Documentation
 -   Troubleshooting

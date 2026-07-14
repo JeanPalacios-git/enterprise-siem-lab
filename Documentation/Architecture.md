@@ -4,7 +4,7 @@
 
 This lab simulates a hybrid enterprise environment where Windows and Linux endpoints send security telemetry to a centralized Wazuh SIEM platform.
 
-The objective is to demonstrate endpoint visibility, centralized log collection, security event correlation, and detection validation across multiple operating systems.
+The objective is to demonstrate endpoint visibility, centralized log collection, event validation, and cross-platform security monitoring across multiple operating systems.
 
 ---
 
@@ -126,7 +126,7 @@ Wazuh Dashboard
 - Active Directory Monitoring
 - File Integrity Monitoring
 - Security Configuration Assessment
-- MITRE ATT&CK Mapping
+- MITRE ATT&CK contextualization for investigation and detection engineering
 
 ---
 

@@ -108,13 +108,13 @@ The following dashboards and searches were verified.
 | Linux auditd | ✅ |
 | Wazuh Agents | ✅ |
 | Wazuh Dashboard | ✅ |
-| Event Correlation | ✅ |
-| MITRE Mapping | ✅ |
+| Cross-platform Event Visibility | ✅ |
+| MITRE ATT&CK Contextualization | ✅ |
 
 ---
 
 # Conclusion
 
-All validation scenarios completed successfully.
+All documented telemetry validation scenarios completed successfully.
 
 The SIEM platform correctly collected, parsed, indexed, and displayed security events generated from both Windows and Linux endpoints.
